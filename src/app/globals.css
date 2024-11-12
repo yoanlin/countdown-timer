@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: var(--font-redHat);
+  font-size: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +30,5 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
