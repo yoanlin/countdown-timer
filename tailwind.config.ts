@@ -23,6 +23,22 @@ export default {
       fontFamily: {
         sans: ["var(--font-redHat)"],
       },
+      backgroundImage: {
+        stars: "url('/assets/images/bg-stars.svg')",
+        hills: "url('/assets/images/pattern-hills.svg')",
+      },
+      keyframes: {
+        flip: {
+          "0%": { transform: "rotateX(0deg)" },
+          "100%": { transform: "rotateX(360deg)" },
+        },
+        upperpulse: {
+          "50%": { opacity: "0.25" },
+        },
+        lowerpulse: {
+          "50%": { opacity: "0.5" },
+        },
+      },
     },
   },
   plugins: [],
