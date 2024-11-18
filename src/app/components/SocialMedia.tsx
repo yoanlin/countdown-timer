@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import IconPinterst from "./icon-pinterest.svg";
+import IconFacebook from "./icon-facebook.svg";
+import IconInstagram from "./icon-instagram.svg";
 
 const SocialMedia = () => {
   return (
@@ -14,32 +17,14 @@ const SocialMedia = () => {
       />
       <div className="flex w-full gap-8 absolute bottom-20 justify-center">
         <Link href="https://www.facebook.com/">
-          <Image
-            src="/assets/images/icon-facebook.svg"
-            alt="facebook"
-            width={20}
-            height={20}
-            className="cursor-pointer hover:fill-secondary"
-          />
+          <IconFacebook className="hover:fill-secondary fill-[#8385A9]" />
         </Link>
 
         <Link href="https://www.pinterest.com/">
-          <Image
-            src="/assets/images/icon-pinterest.svg"
-            alt="pinterest"
-            width={20}
-            height={20}
-            className="cursor-pointer hover:fill-secondary"
-          />
+          <IconPinterst className="cursor-pointer hover:fill-secondary fill-[#8385A9]" />
         </Link>
         <Link href="https://www.instagram.com/">
-          <Image
-            src="/assets/images/icon-instagram.svg"
-            alt="instagram"
-            width={20}
-            height={20}
-            className="cursor-pointer hover:fill-secondary"
-          />
+          <IconInstagram className="hover:fill-secondary fill-[#8385A9]" />
         </Link>
       </div>
     </div>
